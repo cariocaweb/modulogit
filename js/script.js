@@ -1,7 +1,16 @@
-// Forma de comentar o código
-/*
-cometar várias linhas
-*/
-var nome = "José Duarte";
-var w = 33;
-var t = 60;
+// Criando Funções
+
+function tocarDiv(){ // função simples
+    var area = document.getElementById("area");
+    var texto = prompt("Qual o seu nome?");
+
+    area.innerHTML=texto;
+}
+
+
+function tocarNome(nome, idade){ // função simples
+    var area = document.getElementById("area");
+    var texto = prompt("Qual o seu nome?");
+
+    area.innerHTML = nome + " " + texto + " tem " + idade + " anos";
+}
