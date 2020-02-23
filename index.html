@@ -7,9 +7,15 @@
     </head>
     <body>
         <button onclick="window.location.href = 'http://www.google.com';">Ir para o Google</button>        
-        <button onclick="window.location.href = 'http://localhost/modulogit/teste.html';">Atualizar a página</button>
+        <button onclick="window.location.href = 'http://localhost/modulogit';">Atualizar a página</button>
+        <br /><br />
         <div id="area">Alguma coisa ...</div>
-
+        <br /><br />
+        <button onclick="document.getElementById('area').innerHTML = prompt('Qual o seu nome?');">Fazer a ação</button>
+        <br /><br />
+        <div id="area">Alguma outra coisa ...</div>
+        <br /><br />
+        <button onclick="this.innerHTML = prompt('Qual o nome do botão?');">Fazer a ação</button>
     </body>
 
 </html>
