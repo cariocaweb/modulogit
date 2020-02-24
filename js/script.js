@@ -1,4 +1,32 @@
 
+//switch
+
+i=parseInt(prompt("Escolha um nº de 0 a 5"));
+switch(i){
+    case 0:
+        document.write("i é ugual a 0");
+        break;
+    case 1:
+        document.write("i é ugual a 1");
+        break;
+    case 2:
+        document.write("i é ugual a 2");
+        break;
+    case 3:
+        document.write("i é ugual a 3");
+        break;
+    case 4:
+        document.write("i é ugual a 4");
+        break;
+    case 5:
+        document.write("i é ugual a 5");
+        break;
+    default:
+        document.write("Você escolheu um nº diferente de 0 a 5.");
+}
+
+document.write("<br/><br/><br/><br/>");
+
 //Loop
 //for -> enquanto for
 document.write("Iniciando o Loop ''for'' ... <br/>");
