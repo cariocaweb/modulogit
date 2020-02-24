@@ -1,4 +1,41 @@
 
+//Loop
+//for -> enquanto for
+document.write("Iniciando o Loop ''for'' ... <br/>");
+for(y = 0; y<=10; y++ ){
+    document.write("Número y " + y + "<br/>");
+}
+document.write("Finalizando o Loop ''for'' ... <br/><br/>");
+
+
+//while -> enquanto for
+var x = 0;
+document.write("Iniciando o Loop  ''while''... <br/>");
+while(x<=10){
+
+    document.write("Número: " + x + "<br/>");
+    x++; //igual a: x = x + 1
+}
+document.write("Finalizando o Loop ''while'' ... <br/>");
+
+
+// Manipulação de Array
+function Arrays(){
+    var listaArray = [
+        "Arroz",
+        "Feijão",
+        "macarrão",
+        "carne",
+    ]
+
+    var ing = document.getElementById("ingrediente").value;
+    var listahtml = document.getElementById("lista").innerHTML;
+
+    listahtml = listahtml + "<li>"+ing+"</li>";
+    document.getElementById("lista").innerHTML = listahtml;
+}
+
+
 //Opertações matemáticas
 function somar(){
     var campo1=parseInt(document.getElementById("campo1").value);
