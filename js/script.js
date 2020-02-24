@@ -1,3 +1,33 @@
+//eventos JS
+function cliqeuDuplo(){
+    console.log("Clicou 2 vezes");
+}
+function apertouMouse(){
+    console.log("Apertou o Mouse");
+}
+function soltouMouse(){
+    console.log("Soltou o Mouse");
+}
+function mouseCima(){
+    console.log("Passou o Mouse");
+}
+function mouseSaiu(){
+    console.log("Mouse saiu de cima");
+}
+function mouseMove(){
+    console.log("Mouse moveu em cima");
+}
+function clicou(){
+    console.log("Clicou");
+
+}
+
+function botaoDireito(){
+    console.log("Botão Direito");
+
+    return false;
+}
+
 //função verificar
 
 function verificar(){

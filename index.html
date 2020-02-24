@@ -6,6 +6,35 @@
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body onload="resetar()">
+        
+        <button 
+        ondblclick="cliqeuDuplo()" 
+        >Clique duplo</button>
+
+        <br/><br/>
+
+        <button 
+        onmousedown="apertouMouse()" 
+        onmouseup="soltouMouse()" 
+        onmouseover="mouseCima()"
+        onmouseout="mouseSaiu()"
+        onmousemove="mouseMove()"
+        >Enventos</button>
+
+        <br/><br/>
+        
+        <button 
+        onclick="clicou()"
+        >Enventos</button>
+        
+        <br/><br/>
+
+        <!--bloqueando o botão direito-->
+        <button 
+        oncontextmenu="return botaoDireito()"
+        >Botão direito</button>
+        
+        <br/><br/>
 
         <div id="n1">0</div>
         <input type="text" id="n2" />
