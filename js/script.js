@@ -1,6 +1,28 @@
+//função verificar
 
+function verificar(){
+    var n1 = document.getElementById("n1").innerHTML;
+    var n2 = document.getElementById("n2").value;
+
+    if(n1 == n2){
+        alert("Você acertou");
+        //document.write("Você acertou o número!");      
+    }else{
+        alert("Você errou");
+        //document.write("Você errou o número!");
+    }
+    resetar();
+}
+
+function resetar(){
+    document.getElementById("n2").value="";
+
+    var r = Math.floor(Math.random() *100);
+    document.getElementById("n1").innerHTML = r;
+}
+
+/*
 //switch
-
 i=parseInt(prompt("Escolha um nº de 0 a 5"));
 switch(i){
     case 0:
@@ -62,16 +84,16 @@ function Arrays(){
     listahtml = listahtml + "<li>"+ing+"</li>";
     document.getElementById("lista").innerHTML = listahtml;
 }
-
-
+*/
+/*
 //Opertações matemáticas
 function somar(){
     var campo1=parseInt(document.getElementById("campo1").value);
     var campo2=parseInt(document.getElementById("campo2").value);
-
+*/
 /*    alert("campo1 = " + campo1);
     alert("campo2 = " + campo2); */
-
+/*
     var soma = campo1 + campo2;
     var subtrair = campo1 - campo2;
     var multiplicar = campo1 * campo2;
