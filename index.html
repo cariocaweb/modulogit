@@ -5,8 +5,36 @@
         <script type="text/javascript" src="js/script.js"></script>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
-    <body onload="resetar()">
-        
+    <!--<body onload="resetar()">-->
+    <!--<body onload="carregou()">-->
+        <body>
+            <form method="POST" onsubmit="">
+                <input type="text" name="nome" onfocus="focou" onblur="desfocou"/><br/><br/>
+
+                <select name="cidade" onchange="mudouOpcao(this)">
+                    <option>Estado</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Belo Horizonte</option>
+                    <option>Recife</option>
+                </select><br/><br/>
+
+                <input type="submit" value="Enviar" />
+            </form>
+
+            
+
+        <br/><br/><br/>
+        <input type="text" onkeydown="apertouTecla(event)" /> <!--ao pressionar a tecla-->
+        <br/><br/>
+
+        <input type="text" onkeyup="apertouTecla(event)" /> <!--ao soltar a tecla-->
+        <br/><br/>
+
+        <input type="text" onkeypress="apertouTecla(event)" /> <!--ao matem precionado a tecla-->
+        <br/><br/>
+
+
         <button 
         ondblclick="cliqeuDuplo()" 
         >Clique duplo</button>

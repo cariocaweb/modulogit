@@ -1,3 +1,41 @@
+
+function mudouOpcao(objeto){
+    console.log("Selecionou: "+ objeto.value);
+}
+
+function focou(){
+    console.log("Focou no campo: 1");
+}
+
+function desfocou(){
+    console.log("Desfocou do campo 1");
+}
+//evento teclado
+function apertouTecla(event){
+    console.log("Apertou Alguma Tecla: "+event.keyCode); //pega qual o cód do botão
+    
+    if(event.shiftKey == true){
+        console.log("Apertou Alguma Tecla com shift "); //para verificar se o shift foi pressionado retornando "True ou False"
+    }
+
+    // verifica e pega o que foi pressionado Shift + tecla (representada pelo cód da tecla)
+    if(event.shiftKey == true && event.keyCode == 69){
+        console.log("Apertou Shift + E "); //para verificar se o shift foi pressionado retornando "True ou False"
+    }
+
+    if(event.ctrlKey == true){
+        console.log("Apertou Alguma Tecla com Ctrl "); //para verificar se o ctrl foi pressionado retornando "True ou False"
+    }
+  
+}
+
+function carregou(){
+    alert("Pagina Carregada!");
+}
+
+
+
+
 //eventos JS
 function cliqeuDuplo(){
     console.log("Clicou 2 vezes");
